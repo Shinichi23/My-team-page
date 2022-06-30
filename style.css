@@ -1,0 +1,89 @@
+* {
+    background: #FAFAFA;
+}
+body {
+    
+}
+
+header {
+    display: flex;
+    justify-content: center;
+    gap: 150px;
+}
+
+strong {
+    text-transform: uppercase;
+    font-family: "Poppins";
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 27px;
+    letter-spacing: 0em;
+    
+
+}
+
+.title {
+    font-family: "PT Serif";
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 48px;
+    letter-spacing: -0.045em;
+
+}
+
+#container {
+    display: grid;
+    grid-template-columns: 250px 250px 250px;
+    grid-template-rows: auto;
+    
+    
+    width: 700px;
+    height: 550px;
+
+    margin-left: auto;
+    margin-right: auto;
+
+    justify-content: space-evenly;
+    justify-items: center;
+    align-items: center;
+   
+    border: 1px solid black;
+}
+
+.card {
+    
+    width: 150px;
+    height: 200px;
+    
+    border: 1px solid black;
+    
+}
+
+img {
+    height: 90%;
+    width: 85%;
+}
+
+.new {
+    align-self: end;
+  }
+
+  footer {
+    text-align: center;
+    position: sticky;
+    margin-bottom: 24px;
+    color: #BDBDBD;
+    font-family: "Montserrat";
+    font-weight: 600;
+    font-size: 14px;
+}
+
+.devChallenge {
+
+    text-decoration: none;
+    color: #BDBDBD;
+}
+
+a {
+    color: #BDBDBD;
+}
