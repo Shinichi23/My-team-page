@@ -10,14 +10,13 @@ header {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    gap: 150px;
-    margin-top: 25px;
+    gap: 160px;
 }
 
 strong {
     text-transform: uppercase;
     font-family: "Poppins";
-    font-size: 18px;
+    font-size: 13px;
     font-weight: 600;
     line-height: 48px;
     letter-spacing: 0em;
@@ -25,19 +24,24 @@ strong {
 
 .title {
     font-family: "PT Serif";
-    font-size: 36px;
+    font-size: 22px;
     font-weight: 700;
     letter-spacing: -0.045em;
     margin-top: 10px;
 }
 
+.about {
+    font-size: 11px;
+}
+
 #container {
     display: grid;
+    flex-wrap: wrap;
     grid-template-columns: 250px 250px 250px;
     grid-template-rows: auto;
     
     width: 700px;
-    height: 400px;
+    height: 500px;
 
     margin-left: auto;
     margin-right: auto;
@@ -45,41 +49,37 @@ strong {
     justify-content: space-evenly;
     justify-items: center;
     align-items: center;
+
+    
    
-    border: 1px solid black;
 }
 
 .card {
     
-    width: 100px;
-    height: 150px;
-    border: 1px solid black;
+    width: 130px;
+    height: 180px;
     
 }
 
 .sideBySide {
-    position:relative;
-    display:inline-block;
+    display:inline-flex;
 }
 
 
 .picSide {
-    position: absolute;
-    transform: rotate(90deg);
-    transform-origin:100% 100%;
-    -ms-transform: rotate(90deg); /* IE 9 */
-    -ms-transform-origin:100% 100%; /* IE 9 */
-    -webkit-transform:rotate(90deg);
-    -webkit-transform-origin: 100% 100%;
-    z-index: 100;
-    right: 14px; /*edited*/
-    top: 50px;
+    writing-mode: vertical-rl;
     font-family: "PT Serif";
-    font-size: 12px;
+    font-size: 8px;
     font-weight: 400;
     line-height: 16px;
     letter-spacing: 0em;
     text-transform: uppercase;
+}
+
+.textBottom {
+    font-family: "Poppins";
+    font-size: 12px;
+    font-weight: 600;
 }
 
 img {
@@ -110,4 +110,19 @@ img {
 
 a {
     color: #BDBDBD;
+}
+
+#profile:hover {
+    color: black;
+}
+
+@media screen and (max-width: 720px) {
+    header {
+        gap: 50px;
+    }
+
+    #container {
+        
+    }
+
 }
