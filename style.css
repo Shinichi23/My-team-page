@@ -1,0 +1,158 @@
+* {
+    background: #FAFAFA;
+    margin: 0;
+    padding: 0;
+}
+body {
+    height: 33vh;
+}
+
+header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+    width: 600px;
+    
+    margin-right: auto;
+    margin-left: auto;
+
+}
+
+strong {
+    text-transform: uppercase;
+    font-family: "Poppins";
+    font-size: 17px;
+    font-weight: 600;
+    line-height: 48px;
+    letter-spacing: 0em;
+}
+
+.title {
+    font-family: "PT Serif";
+    font-size: 26px;
+    font-weight: 700;
+    letter-spacing: -0.045em;
+    margin-top: 10px;
+}
+
+.about {
+    font-size: 13px;
+}
+
+#container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 230px);
+    
+    justify-items: center;
+    align-items: center;
+
+    width: 700px;
+    margin-right: auto;
+    margin-left: auto;
+    margin-bottom: 40px;
+}
+
+.card {
+    
+    width: 130px;
+    height: 180px;
+   
+}
+
+.new {
+    margin-top: 100px;
+}
+
+.sideBySide {
+    display:inline-flex;
+}
+
+
+.picSide {
+    writing-mode: vertical-rl;
+    font-family: "PT Serif";
+    font-size: 8px;
+    font-weight: 400;
+    line-height: 16px;
+    letter-spacing: 0em;
+    text-transform: uppercase;
+}
+
+.textBottom {
+    font-family: "Poppins";
+    font-size: 12px;
+    font-weight: 600;
+}
+
+img {
+    height: 90%;
+    width: 85%;
+}
+
+
+
+  footer {
+    text-align: center;
+    position: sticky;
+    margin-bottom: 24px;
+    color: #BDBDBD;
+    font-family: "Montserrat";
+    font-weight: 600;
+    font-size: 14px;
+    margin-top: 10px;  
+}
+
+.devChallenge {
+
+    text-decoration: none;
+    color: #BDBDBD;
+}
+
+a {
+    color: #BDBDBD;
+}
+
+#profile:hover {
+    color: black;
+}
+
+@media screen and (max-width: 720px) {
+
+    body {
+        overflow-x: hidden;
+    }
+
+    header {
+        display: flex;
+        flex-direction: column;
+
+        margin-top: 30px;
+        margin-right: 60px;
+        margin-left: 60px;
+    }
+
+    .title {
+        margin-bottom: 20px;
+    }
+
+    #container {
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(3, 230px);
+
+        width: auto;
+
+        margin-bottom: 50px;
+        
+    }
+
+    .new {
+        margin: 0;
+    }
+
+    .bottom {
+        margin-top: 100px;
+    }
+
+}
